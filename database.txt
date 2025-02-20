@@ -1,0 +1,10 @@
+create database webvulner;
+use webvulner;
+
+create table account_register(username varchar(50) primary key,
+password varchar(50),
+contact_no varchar(20),
+email varchar(50), 
+address varchar(155),
+status varchar(20));
+

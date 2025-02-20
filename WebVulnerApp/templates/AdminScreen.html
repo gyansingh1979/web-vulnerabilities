@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+<head>
+<title>Web Vulnerability</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><span>Web Vulnerability</span><small></small></h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_bg">
+        <div class="menu_nav">
+         <ul>      
+     <li><a href="{% url 'ViewUsers' %}"><font size="3" color="black">View Users</a></li>
+	 <li><a href="{% url 'ViewCSRF' %}"><font size="3" color="black">View CSRFS</a></li>
+	 <li><a href="{% url 'ViewPost' %}"><font size="3" color="black">View POST</a></li>
+	 <li><a href="{% url 'ViewGet' %}"><font size="3" color="black">View GET</a></li>
+	 <li><a href="{% url 'index' %}"><font size="3" color="black">Logout</a></li>
+   </ul>          
+        </div>
+        <div class="hbg"><img src="{% static 'images/header_images.jpg' %}" width="1020" height="186" alt="" /></div>
+
+		<font size="3" color="black"><center>{{ data|safe }}</center></font>
+
+       
+  </body>
+</html>
